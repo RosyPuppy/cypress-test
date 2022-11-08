@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-04T05:51:16.569Z",
+    "end": "2021-08-04T05:51:24.310Z",
+    "duration": 6671,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dee2d4bf-0bb0-4e0d-bf2d-f75ee0221010",
+      "title": "",
+      "fullFile": "cypress/integration/e2e/Auth/Auth.spec.js",
+      "file": "cypress/integration/e2e/Auth/Auth.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32d27ab5-31e1-4173-a567-078aa319391b",
+          "title": "example to-do app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check if region based text is available",
+              "fullTitle": "example to-do app Check if region based text is available",
+              "timedOut": null,
+              "duration": 6671,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Sign in headers text in signin.html\nconst ensigin = \"Sign in\";\nconst brsigin = \"Entrar na sua conta\";\nconst essigin = \"Registrarse\"; //   Visit each local and check for related header\ncy.visit(\"http://localhost:8080/en-au/signin.html\");\ncy.get(\".signin.mt-5 > .text-center.m-3\").should(\"have.text\", ensigin);\ncy.visit(\"http://localhost:8080/pt-br/signin.html\");\ncy.get(\".signin.mt-5 > .text-center.m-3\").should(\"have.text\", brsigin);\ncy.visit(\"http://localhost:8080/es-xl/signin.html\");\ncy.get(\".signin.mt-5 > .text-center.m-3\").should(\"have.text\", essigin);",
+              "err": {},
+              "uuid": "3fa13c10-2d47-4181-9dc4-64f61ea447c5",
+              "parentUUID": "32d27ab5-31e1-4173-a567-078aa319391b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3fa13c10-2d47-4181-9dc4-64f61ea447c5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6671,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
