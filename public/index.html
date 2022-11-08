@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>ResMed Account</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://bootswatch.com/4/cosmo/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      #ieDialog {
+        text-align: center;
+        margin: 150px auto;
+        width: 700px;
+      }
+      #ieDialog > #msgPanel {
+        margin: 15px auto;
+        width: 350px;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #f3bac2;
+        border: solid 1px #e05267;
+        color: #bf2239;
+      }
+      #ieDialog > #ieContent {
+        margin-bottom: 5px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      if (navigator.userAgent.match(/Trident/)) {
+        var openEnderContent =
+          "<div id='ieDialog'><div id='msgPanel'>Your current browser is not supported</div><p id='ieContent'>Unfortunately this browser does not support the web technology that powers account.resmed.com</p><p>You'll need another browser. We recommend Google Chrome.<p></div>";
+
+        $("#app").append(openEnderContent);
+      }
+    </script>
+    <!-- built files will be auto injected -->
+    <script src="https://unpkg.com/v-tooltip@2.0.2"></script>
+  </body>
+</html>
